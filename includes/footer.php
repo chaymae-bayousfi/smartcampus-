@@ -6,7 +6,7 @@
                     <p class="mb-0">Gestion intelligente de la vie étudiante</p>
                 </div>
                 <div class="col-md-6 text-md-end">
-                    <p class="mb-0">&copy; 2024 SmartCampus+. Tous droits réservés.</p>
+                    <p class="mb-0">&copy; 2025 SmartCampus+.</p>
                 </div>
             </div>
         </div>

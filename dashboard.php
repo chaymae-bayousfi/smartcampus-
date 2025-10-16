@@ -76,13 +76,13 @@ include 'includes/header.php';
         </div>
         <div class="col-md-3">
             <div class="stat-card" style="background: linear-gradient(135deg, #198754, #20c997);">
-                <h3><?= number_format($stats['monthly_expenses'], 0, ',', ' ') ?>€</h3>
+                <h3><?= number_format($stats['monthly_expenses'], 0, ',', ' ') ?>DH</h3>
                 <p><i class="bi bi-wallet2 me-2"></i>Dépenses ce mois</p>
             </div>
         </div>
         <div class="col-md-3">
             <div class="stat-card" style="background: linear-gradient(135deg, #fd7e14, #ffc107);">
-                <h3><?= number_format($stats['monthly_budget'], 0, ',', ' ') ?>€</h3>
+                <h3><?= number_format($stats['monthly_budget'], 0, ',', ' ') ?>DH</h3>
                 <p><i class="bi bi-piggy-bank me-2"></i>Budget mensuel</p>
             </div>
         </div>
@@ -202,7 +202,7 @@ include 'includes/header.php';
                         ?>
                         <div class="d-flex justify-content-between mb-2">
                             <span>Dépensé</span>
-                            <span><?= number_format($stats['monthly_expenses'], 2, ',', ' ') ?>€ / <?= number_format($stats['monthly_budget'], 0, ',', ' ') ?>€</span>
+                            <span><?= number_format($stats['monthly_expenses'], 2, ',', ' ') ?>DH / <?= number_format($stats['monthly_budget'], 0, ',', ' ') ?>DH</span>
                         </div>
                         <div class="progress mb-3" style="height: 10px;">
                             <div class="progress-bar bg-<?= $progress_class ?>" style="width: <?= min($percentage, 100) ?>%"></div>
@@ -215,7 +215,7 @@ include 'includes/header.php';
                                 </div>
                             </div>
                             <div class="col-6">
-                                <h6 class="text-success"><?= number_format($stats['monthly_budget'] - $stats['monthly_expenses'], 0, ',', ' ') ?>€</h6>
+                                <h6 class="text-success"><?= number_format($stats['monthly_budget'] - $stats['monthly_expenses'], 0, ',', ' ') ?>DH</h6>
                                 <small class="text-muted">Restant</small>
                             </div>
                         </div>
@@ -255,7 +255,7 @@ include 'includes/header.php';
                                                 <?= date('d/m/Y', strtotime($expense['expense_date'])) ?>
                                             </small>
                                         </div>
-                                        <strong class="text-danger">-<?= number_format($expense['amount'], 2, ',', ' ') ?>€</strong>
+                                        <strong class="text-danger">-<?= number_format($expense['amount'], 2, ',', ' ') ?>DH</strong>
                                     </div>
                                 </div>
                             <?php endforeach; ?>
